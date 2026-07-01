@@ -1,0 +1,8 @@
+{
+  "name": "EduPremium E-Learning Portal",
+  "description": "A modern and responsive premium E-Learning portal containing comprehensive visual guides, lessons progress tracking, and full source code downloads for PHP and MySQL database structures suitable for local XAMPP environments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,145 @@
+/* style.css - Custom stylesheet to elevate Bootstrap 5 UI */
+:root {
+    --primary-gradient: linear-gradient(135deg, #2563eb, #4f46e5);
+    --secondary-gradient: linear-gradient(135deg, #1e293b, #0f172a);
+    --hover-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* Gradients & Backgrounds */
+.bg-primary-gradient {
+    background: var(--primary-gradient) !important;
+}
+
+.bg-secondary-gradient {
+    background: var(--secondary-gradient) !important;
+}
+
+/* Premium Navigation */
+.navbar {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e2e8f0;
+    transition: var(--hover-transition);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+/* Cards Elevation */
+.card-premium {
+    border: 1px solid #e2e8f0;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    transition: var(--hover-transition);
+    background: #ffffff;
+}
+
+.card-premium:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.08);
+    border-color: #cbd5e1;
+}
+
+/* Buttons and Controls */
+.btn-premium-primary {
+    background: var(--primary-gradient);
+    color: #ffffff;
+    border: none;
+    border-radius: 9999px;
+    font-weight: 600;
+    padding: 0.625rem 1.5rem;
+    transition: var(--hover-transition);
+}
+
+.btn-premium-primary:hover {
+    opacity: 0.95;
+    transform: scale(1.02);
+    color: #ffffff;
+}
+
+.btn-premium-secondary {
+    background: var(--secondary-gradient);
+    color: #ffffff;
+    border: none;
+    border-radius: 9999px;
+    font-weight: 600;
+    padding: 0.625rem 1.5rem;
+    transition: var(--hover-transition);
+}
+
+.btn-premium-secondary:hover {
+    opacity: 0.95;
+    transform: scale(1.02);
+    color: #ffffff;
+}
+
+/* Lesson View Sidebar */
+.lesson-sidebar {
+    background-color: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.lesson-sidebar .list-group-item {
+    border: none;
+    border-bottom: 1px solid #f1f5f9;
+    padding: 1rem;
+    transition: var(--hover-transition);
+}
+
+.lesson-sidebar .list-group-item.active {
+    background: #eff6ff;
+    color: #1e3a8a;
+    font-weight: 700;
+    border-left: 4px solid #2563eb;
+}
+
+/* Custom Accordions */
+.faq-accordion .accordion-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    box-shadow: none;
+}
+
+/* Certificate Preview Container */
+.certificate-container {
+    background: #ffffff;
+    border: 12px double #e2e8f0;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    position: relative;
+    max-width: 750px;
+    margin: 2rem auto;
+}
+
+.certificate-seal {
+    width: 80px;
+    height: 80px;
+    background: #2563eb;
+    border-radius: 50%;
+    margin: 1.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.8rem;
+    box-shadow: 0 0 0 8px rgba(37, 99, 235, 0.1);
+}
